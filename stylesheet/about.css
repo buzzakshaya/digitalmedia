@@ -1,0 +1,214 @@
+
+
+.landing {
+    height: 100%;
+}
+
+.landing header {
+    background: var(--white);
+}
+
+.landing header nav a {
+    color: var(--black);
+}
+
+.landing header nav a::after {
+    background: var(--blue);
+}
+
+.landing main {
+    height: 300px;
+    display: block;
+}
+
+.landing-intro {
+    height: 100%;
+    text-align: center;
+}
+
+.landing-intro h1 {
+    line-height: 300px;
+}
+
+
+/* our mission section ------------------------ */
+
+.our-mission, .our-team, .ceo-statement, .call-to-action {
+    padding: 100px 12%;
+}
+
+.our-mission {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 12%;
+    align-items: center;
+}
+
+.mission-heading hr {
+    height: 2px;
+    width: 100px;
+    border: none;
+    background: var(--black);
+    margin-bottom: 20px;  
+}
+
+.mission-heading h1 {
+    font-size: 40px;
+    margin-bottom: 30px;  
+}
+
+.mission-heading h1 {
+    font-size: 40px;
+    margin-bottom: 20px;  
+}
+
+.mission-heading p {
+    opacity: 0.7;
+}
+
+.mission-heading .video-link {
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--blue);
+    padding: 20px 40px;
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.mission-img img {
+    width: 100%;
+}
+
+
+/* our team section -------------------------- */
+
+.our-team {
+    background: var(--section-bg);
+}
+
+.team-members {
+    position: relative;
+}
+
+.each-team-member {
+    padding: 20px 30px;
+    background: var(--white);
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+.each-team-member .member-role {
+    opacity: 0.7;
+    display: block;
+    text-align: right;
+}
+
+.each-team-member .member-image {
+    overflow: hidden;
+}
+
+.each-team-member .member-image img {
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.each-team-member:hover .member-image img {
+    border-color: var(--accent);
+}
+
+.each-team-member .member-name {
+    display: block;
+    font-weight: 700;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: calc(50% - 50px);
+    width: 50px;
+    height: 50px;
+    background: var(--white) !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 50% !important;
+    transition: var(--transition);
+}
+
+.owl-nav button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+.owl-nav button span {
+    font-size: 30px;
+    color: var(--black) !important;
+}
+
+.owl-nav button:hover span {
+    color: var(--black) !important;
+}
+
+.owl-prev {
+    left: -70px;
+}
+
+.owl-next {
+    right: -70px;
+}
+
+.owl-dots {
+    margin-top: 20px;
+}
+
+
+/* ceo statement section --------------------------- */
+
+.ceo-statement {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 12%;
+    align-items: center;
+}
+
+.mission-heading .ceo-sign {
+    width: 200px;
+    margin: 20px 0 10px 0;
+}
+
+.mission-heading .ceo-name {
+    display: block;
+    font-weight: 700;
+}
+
+.mission-heading .ceo-role {
+    opacity: 0.7;
+}
+
+.ceo-image img {
+    width: 100%;
+}
+
+
+/* CTA section ------------------------------------ */
+
+.call-to-action {
+    background: linear-gradient(90deg, #003C64 0%, #0071BC 100%);
+}
+
+.call-to-action h1 {
+    font-size: 40px;
+    color: var(--white);
+    display: inline-block;
+}
+
+.call-to-action a {
+    color: var(--black);
+    background: var(--accent);
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-weight: 600;
+    float: right;
+}

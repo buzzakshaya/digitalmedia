@@ -1,2 +1,2 @@
-# View the website live here: 
-# https://hellotushaar.github.io/digitalmedia
+## View the website live here: 
+## https://hellotushaar.github.io/digitalmedia

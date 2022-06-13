@@ -60,22 +60,19 @@ body {
 }
 
 .landing header nav a::after {
-    content: " ";
+    content: "";
     position: absolute;
-    bottom: calc(50% + 16px);
-    left: 50%;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
     background: var(--white);
-    transform: translateY(-10px);
-    opacity: 0;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
     transition: var(--transition);
 }
 
 .landing header nav a:hover::after {
-    opacity: 1;
-    transform: translateY(0px);
+    width: 100%;
+    left: 0;
 }
 
 .landing header nav a:last-child {
@@ -190,7 +187,6 @@ body {
 .single-service {
     text-decoration: none;
     text-align: center;
-    background: #F2F8FC;
     background: var(--section-bg);
     padding: 60px 40px 40px 40px;
     border-radius: 10px;
@@ -243,7 +239,6 @@ body {
 
 .portfolio {
     background: var(--section-bg);
-
 }
 
 .portfolio-container {
@@ -270,6 +265,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(255, 145, 77, 0.8);
+    background: rgba(0, 113, 188, 0.8);
     border-radius: 10px 10px 0 0;
     z-index: 0;
     box-sizing: border-box;
@@ -277,7 +273,7 @@ body {
     transition: var(--transition);
 }
 
-.portfolio-img:hover::after {
+.single-portfolio:hover .portfolio-img::after {
     opacity: 1;
 }
 
@@ -305,18 +301,14 @@ body {
     transition: var(--transition);
 }
 
-.portfolio-img:hover .portfolio-icon {
+.single-portfolio:hover .portfolio-icon {
     opacity: 1;
     transform: translateY(0px);
 }
 
-.portfolio-icon a {
-    display: block;
+.portfolio-icon img {
+    width: 60%;
     margin: 0 auto;
-    width: 70%;
-}
-
-.portfolio-icon a img {
     display: block;
 }
 
@@ -345,14 +337,15 @@ body {
 }
 
 .testimonial::after {
-    content: " ";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 113, 188, 0.7);
     background-color: rgba(16, 16, 16, 0.7);
+    background-color: rgba(0, 113, 188, 0.7);
+    background: rgba(0, 60, 100, 0.85);
     z-index: 1;
 }
 
@@ -376,8 +369,8 @@ body {
 .testimonial main a {
     display: inline-block;
     margin-top: 30px;
-    padding: 12px 30px;
-    border: 1px solid #fff;
+    padding: 20px 40px;
+    border: 1px solid var(--white);
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 600;
@@ -386,7 +379,7 @@ body {
 
 .testimonial main a:hover {
     background: var(--white);
-    color: var(--black);
+    color: var(--blue);
 }
 
 
@@ -406,12 +399,12 @@ body {
     display: flex;
     height: 150px;
     background: var(--white);
-    border: 1px solid var(--white);
+    border: 3px solid var(--white);
     border-radius: 5px;
     transition: var(--transition);
 }
 .single-client:hover {
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-color: rgba(16, 16, 16, 0.1);
 }
 .single-client img {
     display: block;
@@ -436,11 +429,11 @@ body {
 
 .homepage-contact main iframe {
     width: 100%;
-    height: 450px;
+    height: 500px;
 }
 .homepage-contact main .contact-box  {
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 12%;
     background: var(--white);
     box-shadow: 0px 0px 60px #1010101a;

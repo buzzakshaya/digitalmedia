@@ -79,4 +79,9 @@ fieldset[name="buttons"] input[type="reset"]:hover {
 
 .contact-info a {
     color: var(--black);
+    transition: var(--transition);
+}
+
+.contact-info a:hover {
+    color: var(--blue);
 }
